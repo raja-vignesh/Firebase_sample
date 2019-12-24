@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		4E63DAE723A29BBC002B1A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E63DAE523A29BBC002B1A4E /* Main.storyboard */; };
 		4E63DAE923A29BBF002B1A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E63DAE823A29BBF002B1A4E /* Assets.xcassets */; };
 		4E63DAEC23A29BBF002B1A4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E63DAEA23A29BBF002B1A4E /* LaunchScreen.storyboard */; };
+		4E63DAF423A3E3A8002B1A4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E63DAF323A3E3A8002B1A4E /* GoogleService-Info.plist */; };
+		9EFF61D6E06799AE0356E45D /* Pods_TrainApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFAE5CE860700894A2E27D6 /* Pods_TrainApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		4E63DAE823A29BBF002B1A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E63DAEB23A29BBF002B1A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E63DAED23A29BBF002B1A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E63DAF323A3E3A8002B1A4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B24CC282054E1C0A4F89D3AB /* Pods-TrainApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainApp.release.xcconfig"; path = "Target Support Files/Pods-TrainApp/Pods-TrainApp.release.xcconfig"; sourceTree = "<group>"; };
+		BAFAE5CE860700894A2E27D6 /* Pods_TrainApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCAE33A1B4A335D3C63728F /* Pods-TrainApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainApp.debug.xcconfig"; path = "Target Support Files/Pods-TrainApp/Pods-TrainApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EFF61D6E06799AE0356E45D /* Pods_TrainApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +45,11 @@
 		4E63DAD523A29BBC002B1A4E = {
 			isa = PBXGroup;
 			children = (
+				4E63DAF323A3E3A8002B1A4E /* GoogleService-Info.plist */,
 				4E63DAE023A29BBC002B1A4E /* TrainApp */,
 				4E63DADF23A29BBC002B1A4E /* Products */,
+				D65EC7983DA925527F332686 /* Pods */,
+				526C09EA415E878C0D218F7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +74,23 @@
 			path = TrainApp;
 			sourceTree = "<group>";
 		};
+		526C09EA415E878C0D218F7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAFAE5CE860700894A2E27D6 /* Pods_TrainApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D65EC7983DA925527F332686 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCCAE33A1B4A335D3C63728F /* Pods-TrainApp.debug.xcconfig */,
+				B24CC282054E1C0A4F89D3AB /* Pods-TrainApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E63DAF023A29BBF002B1A4E /* Build configuration list for PBXNativeTarget "TrainApp" */;
 			buildPhases = (
+				7523E710DE7E06A773DBC012 /* [CP] Check Pods Manifest.lock */,
 				4E63DADA23A29BBC002B1A4E /* Sources */,
 				4E63DADB23A29BBC002B1A4E /* Frameworks */,
 				4E63DADC23A29BBC002B1A4E /* Resources */,
+				1872713DFF62FF2720A94AB1 /* [CP] Embed Pods Frameworks */,
+				928F131F7CFC2B65CE32D216 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E63DAEC23A29BBF002B1A4E /* LaunchScreen.storyboard in Resources */,
+				4E63DAF423A3E3A8002B1A4E /* GoogleService-Info.plist in Resources */,
 				4E63DAE923A29BBF002B1A4E /* Assets.xcassets in Resources */,
 				4E63DAE723A29BBC002B1A4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1872713DFF62FF2720A94AB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrainApp/Pods-TrainApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrainApp/Pods-TrainApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrainApp/Pods-TrainApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7523E710DE7E06A773DBC012 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrainApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		928F131F7CFC2B65CE32D216 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrainApp/Pods-TrainApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrainApp/Pods-TrainApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrainApp/Pods-TrainApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E63DADA23A29BBC002B1A4E /* Sources */ = {
@@ -280,10 +370,12 @@
 		};
 		4E63DAF123A29BBF002B1A4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCCAE33A1B4A335D3C63728F /* Pods-TrainApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TrainApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +389,12 @@
 		};
 		4E63DAF223A29BBF002B1A4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B24CC282054E1C0A4F89D3AB /* Pods-TrainApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TrainApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
