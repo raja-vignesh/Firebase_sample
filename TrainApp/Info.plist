@@ -52,5 +52,39 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>fb999769623755024</string>
+      </array>
+      </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>999769623755024</string>
+    <key>FacebookDisplayName</key>
+    <string>Train-Fire</string>
+    
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb999769623755024</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+            <string>com.googleusercontent.apps.499465443476-lfnib6cgh20r0hcujkhcevs2f7c20b3l</string>
+            </array>
+        </dict>
+    </array>
 </dict>
 </plist>

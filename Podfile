@@ -13,7 +13,8 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'FirebaseUI'
-pod 'GoogleSignIn' 
-
+pod 'GoogleSignIn'
+pod 'GoogleUtilities'
+pod 'FBSDKLoginKit'
 
 end
