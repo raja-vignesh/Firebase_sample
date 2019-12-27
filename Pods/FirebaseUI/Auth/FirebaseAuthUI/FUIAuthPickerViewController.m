@@ -107,7 +107,7 @@ static const CGFloat kTOSViewHorizontalMargin = 16.0f;
   }
   if (@available(iOS 13, *)) {
     if (!self.authUI.interactiveDismissEnabled) {
-      self.modalInPresentation = YES;
+      //self.modalInPresentation = YES;
     }
   }
 

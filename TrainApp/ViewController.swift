@@ -14,17 +14,46 @@ import FBSDKLoginKit
 class ViewController: UIViewController,GIDSignInDelegate,LoginButtonDelegate {
   
     
-
+    // MARK: Email/Password - signup
     
+    @IBOutlet weak var signup: UIButton!
+    
+    @IBAction func signupAction(_ sender: Any) {
+        self.present(SignupViewController(), animated: true) {() -> Void in
+            //self.dismiss(animated: true, completion: nil)
+        }
+        
+  
+    }
+    
+    
+    // MARK: Email/Password - signin
+    
+    @IBOutlet weak var emailAuth: UIButton!
+    
+    @IBAction func emailAuthAction(_ sender: Any) {
+        
+        
+        self.present(SigninViewController(), animated: true) {() -> Void in
+                 //self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    
+    // MARK: Twitter - No suuport
+    @IBOutlet weak var twitterLogin: UIButton!
+    
+    
+    @IBAction func twitterLoginAction(_ sender: Any) {
+        var provider = OAuthProvider(providerID: "twitter.com")
+    }
+    
+
+
+    // MARK: Facebook
     
     @IBOutlet weak var fbLoginButton: FBLoginButton!
     
-    
-    
-    
-    
-
-    // MARK: Facebook
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
         
         let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
@@ -73,8 +102,12 @@ class ViewController: UIViewController,GIDSignInDelegate,LoginButtonDelegate {
                     self.present(alertController, animated: true, completion: nil)
                     return
                 }
+                if let appDelegate = UIApplication.shared.delegate{
+                    appDelegate.window??.rootViewController =        UINavigationController(rootViewController: HomeViewController())
+                    
+                    
+                }
             }
-            // self.performSegue(withIdentifier: self.signInSegue, sender: nil)
         }
     }
     
@@ -129,6 +162,9 @@ class ViewController: UIViewController,GIDSignInDelegate,LoginButtonDelegate {
                 return
             } else {
                 print("Login successfull")
+                if let appDelegate = UIApplication.shared.delegate{
+                    appDelegate.window??.rootViewController =        UINavigationController(rootViewController: HomeViewController())
+                }
             }
             
         }

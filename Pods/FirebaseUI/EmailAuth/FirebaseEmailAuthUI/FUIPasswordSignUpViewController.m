@@ -129,7 +129,7 @@ static const CGFloat kTextFieldRightViewSize = 36.0f;
   [self enableDynamicCellHeightForTableView:_tableView];
   
   if (@available(iOS 13.0, *)) {
-    _tableView.backgroundColor = [UIColor systemBackgroundColor];
+    //_tableView.backgroundColor = [UIColor systemBackgroundColor];
   }
 }
 

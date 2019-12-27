@@ -113,7 +113,7 @@ static NSString *const kCellReuseIdentifier = @"cellReuseIdentifier";
   [self enableDynamicCellHeightForTableView:_tableView];
   
   if (@available(iOS 13.0, *)) {
-    _tableView.backgroundColor = [UIColor systemBackgroundColor];
+   // _tableView.backgroundColor = [UIColor systemBackgroundColor];
   }
 }
 
@@ -136,7 +136,7 @@ static NSString *const kCellReuseIdentifier = @"cellReuseIdentifier";
 
     if (@available(iOS 13, *)) {
       if (!self.authUI.isInteractiveDismissEnabled) {
-        self.modalInPresentation = YES;
+       // self.modalInPresentation = YES;
       }
     }
   }

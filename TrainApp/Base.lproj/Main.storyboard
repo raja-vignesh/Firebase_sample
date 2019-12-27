@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -29,19 +30,39 @@
                                     <action selector="facebookLoginWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FXD-p1-jiW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLV-FK-CUP">
+                                <rect key="frame" x="149" y="355" width="116" height="30"/>
+                                <state key="normal" title="Signin with Email"/>
+                                <connections>
+                                    <action selector="emailAuthAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cvq-gb-Ckk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRY-J2-I0p">
+                                <rect key="frame" x="146.5" y="317" width="121" height="30"/>
+                                <state key="normal" title="Signup with Email"/>
+                                <connections>
+                                    <action selector="signupAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9I-ke-CwP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Qyz-6A-jTn" firstAttribute="centerX" secondItem="ACj-ly-TQv" secondAttribute="centerX" id="6Oy-mO-67Z"/>
+                            <constraint firstItem="RLV-FK-CUP" firstAttribute="top" secondItem="RRY-J2-I0p" secondAttribute="bottom" constant="8" id="BUk-2I-JQU"/>
                             <constraint firstItem="Qyz-6A-jTn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O9I-gR-uCo"/>
                             <constraint firstItem="Qyz-6A-jTn" firstAttribute="top" secondItem="ACj-ly-TQv" secondAttribute="bottom" constant="10" id="UmW-MP-su7"/>
                             <constraint firstItem="Qyz-6A-jTn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YMz-EO-NQC"/>
+                            <constraint firstItem="RLV-FK-CUP" firstAttribute="centerX" secondItem="ACj-ly-TQv" secondAttribute="centerX" id="uOs-YB-ybL"/>
+                            <constraint firstItem="RLV-FK-CUP" firstAttribute="centerX" secondItem="RRY-J2-I0p" secondAttribute="centerX" id="w3F-zZ-8of"/>
+                            <constraint firstItem="ACj-ly-TQv" firstAttribute="top" secondItem="RLV-FK-CUP" secondAttribute="bottom" constant="8" id="zmW-rb-KTj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="emailAuth" destination="RLV-FK-CUP" id="dHE-V2-dmS"/>
                         <outlet property="fbLoginButton" destination="ACj-ly-TQv" id="hHz-Pq-Fd7"/>
                         <outlet property="sigin" destination="Qyz-6A-jTn" id="IyR-h4-FuT"/>
+                        <outlet property="signup" destination="RRY-J2-I0p" id="sfd-0w-doL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -96,8 +96,8 @@ static const CGFloat kFooterTextViewHorizontalInset = 8.0f;
   [self enableDynamicCellHeightForTableView:_tableView];
   
   if (@available(iOS 13.0, *)) {
-    _tableView.backgroundColor = [UIColor systemBackgroundColor];
-    self.footerTextView.textColor = [UIColor secondaryLabelColor];
+    //_tableView.backgroundColor = [UIColor systemBackgroundColor];
+    //self.footerTextView.textColor = [UIColor secondaryLabelColor];
   }
 }
 
